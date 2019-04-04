@@ -1,0 +1,200 @@
+package pack;
+
+/**
+ *
+ * @author KAYKYZIKA123
+ */
+public class person {
+    private String nome;
+    private String cpf; 
+    private String rg;
+    private String sexo;
+    private int idade;
+
+    private String getNome(){
+        return nome;
+    }
+
+    private void setNome(String nome){
+        this.nome = nome;
+    }
+
+    private String getCpf(){
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getRg() {
+        return rg;
+    }
+
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public static void main(String[] args) {
+        
+        String space = " ";
+        
+        person p1 = new person();
+        p1.setNome("Jubesvaldo");
+        p1.setCpf("669.608.750-80");
+        p1.setRg("45.121.591-6");
+        p1.setIdade(105);
+        p1.setSexo("M");
+        
+        person p2 = new person();
+        p2.setNome("Paulo Jorge Martins");
+        p2.setCpf("167.394.518-00");
+        p2.setRg("31.543.032-1");
+        p2.setIdade(71);
+        p2.setSexo("M");
+        
+        person p3 = new person();
+        p3.setNome("Breno Lucas Nascimento");
+        p3.setCpf("669.608.750-80");
+        p3.setRg("45.121.591-6");
+        p3.setIdade(83);
+        p3.setSexo("M");
+        
+        person p4 = new person();
+        p4.setNome("Lorenzo Joaquim Iago da Cruz");
+        p4.setCpf("211.684.018-01");
+        p4.setRg("48.974.054-6");
+        p4.setIdade(19);
+        p4.setSexo("M");
+        
+        person p5 = new person();
+        p5.setNome("Geraldo Samuel Yago Caldeira");
+        p5.setCpf("320.758.647-30");
+        p5.setRg("40.768.213-2");
+        p5.setIdade(45);
+        p5.setSexo("M");
+        
+        person p6 = new person();
+        p6.setNome("Diego Yuri Calebe Drumond");
+        p6.setCpf("222.927.919-00");
+        p6.setRg("43.047.275-4");
+        p6.setIdade(23);
+        p6.setSexo("M");
+        
+        person p7 = new person();
+        p7.setNome("Lúcia Natália Mendes");
+        p7.setCpf("906.142.482-80");
+        p7.setRg("13.943.641-8");
+        p7.setIdade(21);
+        p7.setSexo("F");
+        
+        person p8 = new person();
+        p8.setNome("Silvana Antonella Benedita Viana");
+        p8.setCpf("521.141.998-78");
+        p8.setRg("40.823.830-6");
+        p8.setIdade(5);
+        p8.setSexo("F");
+        
+        person p9 = new person();
+        p9.setNome("Vitória Renata da Mata");
+        p9.setCpf("415.613.737-61");
+        p9.setRg("21.543.774-3");
+        p9.setIdade(90);
+        p9.setSexo("F");
+        
+        person p10 = new person();
+        p10.setNome("Letícia Kamilly Almeida");
+        p10.setCpf("442.101.455-99");
+        p10.setRg("46.208.013-4");
+        p10.setIdade(19);
+        p10.setSexo("F");
+        
+        System.out.println("Nome: "+p1.getNome());
+        System.out.println("Idade: "+p1.getIdade());
+        System.out.println("CPF: "+p1.getCpf());
+        System.out.println("RG: "+p1.getIdade());
+        System.out.println("Sexo: "+p1.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p2.getNome());
+        System.out.println("Idade: "+p2.getIdade());
+        System.out.println("CPF: "+p2.getCpf());
+        System.out.println("RG: "+p2.getIdade());
+        System.out.println("Sexo: "+p2.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p3.getNome());
+        System.out.println("Idade: "+p3.getIdade());
+        System.out.println("CPF: "+p3.getCpf());
+        System.out.println("RG: "+p3.getIdade());
+        System.out.println("Sexo: "+p3.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p4.getNome());
+        System.out.println("Idade: "+p4.getIdade());
+        System.out.println("CPF: "+p4.getCpf());
+        System.out.println("RG: "+p4.getIdade());
+        System.out.println("Sexo: "+p4.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p5.getNome());
+        System.out.println("Idade: "+p5.getIdade());
+        System.out.println("CPF: "+p5.getCpf());
+        System.out.println("RG: "+p5.getIdade());
+        System.out.println("Sexo: "+p5.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p6.getNome());
+        System.out.println("Idade: "+p6.getIdade());
+        System.out.println("CPF: "+p6.getCpf());
+        System.out.println("RG: "+p6.getIdade());
+        System.out.println("Sexo: "+p6.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p7.getNome());
+        System.out.println("Idade: "+p7.getIdade());
+        System.out.println("CPF: "+p7.getCpf());
+        System.out.println("RG: "+p7.getIdade());
+        System.out.println("Sexo: "+p7.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p8.getNome());
+        System.out.println("Idade: "+p8.getIdade());
+        System.out.println("CPF: "+p8.getCpf());
+        System.out.println("RG: "+p8.getIdade());
+        System.out.println("Sexo: "+p8.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p9.getNome());
+        System.out.println("Idade: "+p9.getIdade());
+        System.out.println("CPF: "+p9.getCpf());
+        System.out.println("RG: "+p9.getIdade());
+        System.out.println("Sexo: "+p9.getSexo());
+        System.out.println(space);
+        
+        System.out.println("Nome: "+p10.getNome());
+        System.out.println("Idade: "+p10.getIdade());
+        System.out.println("CPF: "+p10.getCpf());
+        System.out.println("RG: "+p10.getIdade());
+        System.out.println("Sexo: "+p10.getSexo());
+        System.out.println(space);
+    }
+
+
+}
