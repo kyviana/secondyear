@@ -1,0 +1,49 @@
+package controleremoto;
+
+public class ControleRemoto implements Control{
+   
+   
+   private boolean ligado;
+   private int volume;
+   
+   ControleRemoto(){
+    
+       this.ligado = true;
+       this.volume = 50;
+   
+   }
+   
+   private int getVolume(){
+       return volume;
+   }
+   
+   private boolean setVolume(int volume){
+       this.volume = volume;
+       return false;
+   }
+   
+   private boolean getLigado(){
+       return ligado;
+   }
+   
+   private boolean setLigado(boolean ligado){
+       this.ligado = ligado;
+       return false;
+   }
+
+   public void on() {
+       if(this.getLigado()==true){
+           System.out.println("Já está ligado!");
+       }else{
+            this.setLigado(true);
+       }
+   
+   }
+
+   public void off() {
+   }
+
+
+  
+   
+}
