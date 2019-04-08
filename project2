@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/silky-icon-user-filled-in/60/user-man-add-512.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script>
+function reset(){
+    document.getElementById("formreset").reset();
+}
+
+function validate(){
+    var nome = flinston;
+}
+
+</script>
+<style>
+.option {
+    margin-left: 280px; 
+}
+
+a {
+    color: black;
+}
+
+.effect {
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.effect:focus {
+    width: 20%;
+}
+
+.img1 {
+    margin-left: 0px;
+    padding-top: 0px;
+    position: absolute;
+    top: 15%;
+}
+
+.img2 {
+    margin-left: 0px;
+    padding-top: 0px;
+    position: absolute;
+    top: 52%;
+}
+
+.img3 {
+    margin-left: 0px;
+    padding-top: 0px;
+    position: absolute;
+    top: 93%;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(66, 184, 221);
+}
+
+.button2:hover {
+  background-color: rgb(66, 184, 221);
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+</style>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+<form name="form1" id="formreset">
+    <fieldset>
+        <legend><i class="far fa-address-card"></i> <a href=""> Dados Pessoais</a></legend>
+        <div class="option">
+        <p> Nome: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" nam="name" type="text" placeholder="digite..."> </p>
+        <p> Nascimento: <input type="date" placeholder="digite..."> </p>
+        <p> Sexo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="opcao" value="op1"> Masculino <input type="radio" name="opcao" value="op2"> Feminino </p>
+        <p> Formação: 
+        &nbsp;&nbsp;&nbsp;<select>
+        <option disabled selected hidden>Selecione</option>
+        <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+        <option value="Cursando Ensino Médio">Cursando Ensino Médio</option>
+        <option value="Fundamental Completo">Fundamental Completo</option>
+        <option value="Ensino Superior">Ensino Superior</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profissão:
+        <select>
+        <option disabled selected hidden>Selecione</option>
+        <option value="Pedreiro">Pedreiro</option>
+        <option value="Hotelaria">Hotelaria</option>
+        <option value="Design">Design</option>
+        <option value="Música">Música</option>
+        <option value="Astronomia">Astronomia</option>
+        <option value="Outro">Outro</option>
+        </select>
+        </p>
+        <p> CPF: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
+        </div>
+        <img class="img1" src="https://i.imgur.com/cv4t5oI.png"><br><br><br><br>
+    </fieldset><br>
+    <fieldset>
+        <legend><i class="fas fa-phone"></i> <a href=""> Contato</a></legend>
+        <div class="option">
+        <p> E-mail: &nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
+        <p> Telefone: &nbsp;<input class="effect" type="text" placeholder="digite..."> </p> 
+        <p> Celular: &nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
+        <p> Skype: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
+        </div> 
+        <img class="img2" src="https://i.imgur.com/5QDLsBQ.png"><br><br><br><br>
+    </fieldset>
+    </fieldset><br>
+        <fieldset>
+        <legend> <a href=""><i class="fas fa-home"></i> Endereço</a></legend>
+        <div class="option">
+        <p> Logradouro: <input class="effect" type="text" placeholder="digite..."> </p>
+        <p> 
+        Número: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <input class="effect" type="text" placeholder="digite...">
+        </p> 
+        <p> 
+        Bairro: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cidade: <input class="effect" type="text" placeholder="digite...">
+        </p>
+        <p> Estado: 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select>
+        <option disabled selected hidden>Selecione</option>
+        <option value="RJ">RJ</option>
+        <option value="SP">SP</option>
+        <option value="MG">MG</option>
+        <option value="CE">CE</option>
+        <option value="Outro">Outro</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profissão:
+        <select>
+        <option disabled selected hidden>Selecione</option>
+        <option value="Pedreiro">Pedreiro</option>
+        <option value="Hotelaria">Hotelaria</option>
+        <option value="Design">Design</option>
+        <option value="Música">Música</option>
+        <option value="Astronomia">Astronomia</option>
+        <option value="Outro">Outro</option>
+        </select>
+        </p>
+        </div> 
+        <img class="img3" src="https://i.imgur.com/NSbqxg6.png"><br><br><br><br><br><br><br>
+    </fieldset>
+    <button class="button button1">Salvar Dados</button>
+    <button class="button button2" onclick="reset">Limpar Dados</button>
+</form> 
+</body>
+</html>
