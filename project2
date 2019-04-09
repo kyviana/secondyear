@@ -12,7 +12,110 @@ function reset(){
 }
 
 function validate(){
-    var nome = flinston;
+    var nome = form1.nome.value;   
+    var data = form1.data.value;
+    var opcao = form1.opcao.value;
+    var formacao = form1.formacao.value;
+    var profissao = form1.profissao.value;
+    var cpf = form1.cpf.value;
+    var email = form1.email.value;
+    var telefone = form1.telefone.value;
+    var celular = form1.celular.value;
+    var skype = form1.skype.value;
+    var logradouro = form1.logradouro.value;
+    var numero = form1.numero.value;
+    var cep = form1.cep.value;
+    var bairro = form1.bairro.value;
+    var cidade = form1.cidade.value;
+    var estado = form1.estado.value;
+    var complemento = form1.complemento.value;
+
+    if(nome == ""){
+        alert("Preencha o campo com seu nome!")
+        form1.nome.focus();
+        return false;
+    } else if(nome.length < 3){
+        alert("Digite seu nome completo!")
+        form1.nome.focus();
+        return false;
+    } else if(data == ""){
+        alert("Preencha sua data corretamente!")
+        form1.data.focus();
+        return false;
+    } else if(opcao == ""){
+        alert("Indique seu sexo!")
+        form1.opcao.focus();
+        return false;
+    } else if(formacao == "Selecione"){
+        alert("Indique sua formação!")
+        form1.formacao.focus();
+        return false;
+    } else if(profissao == "Selecione"){
+        alert("Indique sua profissão!")
+        form1.profissao.focus();
+        return false;
+    } else if(cpf == ""){
+        alert("Forneça seu CPF corretamente!")
+        form1.cpf.focus();
+        return false;
+    } else if(email == ""){
+        alert("Digite seu e-mail corretamente!")
+        form1.email.focus();
+        return false;
+    } else if(telefone == ""){
+        alert("Digite seu telefone corretamente!")
+        form1.telefone.focus();
+        return false;
+    } else if(celular == ""){
+        alert("Digite seu celular corretamente!")
+        form1.celular.focus();
+        return false;
+    } else if(skype == ""){
+        alert("Digite seu skype corretamente!")
+        form1.skype.focus();
+        return false;
+    } else if(logradouro == ""){
+        alert("Preencha seu logradouro corretamente!")
+        form1.logradouro.focus();
+        return false;
+    } else if(numero == ""){
+        alert("Digite seu número corretamente!")
+        form1.numero.focus();
+        return false;
+    } else if(cep == ""){
+        alert("Digite seu CEP corretamente!")
+        form1.cep.focus();
+        return false;
+    } else if(bairro == ""){
+        alert("Digite sua bairro corretamente!")
+        form1.bairro.focus();
+        return false;
+    } else if(cidade == ""){
+        alert("Digite sua cidade corretamente!")
+        form1.cidade.focus();
+        return false;
+    } else if(estado == "Selecione"){
+        alert("Selecione seu estado corretamente!")
+        form1.estado.focus();
+        return false;
+    } else if(complemento == ""){
+        alert("Digite seu complemento corretamente!")
+        form1.complemento.focus();
+        return false;
+    } else{
+        alert("O formulário foi preenchido corretamente!")
+    }
+}
+
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+  
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }
+  
 }
 
 </script>
@@ -38,21 +141,21 @@ a {
     margin-left: 0px;
     padding-top: 0px;
     position: absolute;
-    top: 15%;
+    top: 18%;
 }
 
 .img2 {
     margin-left: 0px;
     padding-top: 0px;
     position: absolute;
-    top: 52%;
+    top: 67%;
 }
 
 .img3 {
     margin-left: 0px;
     padding-top: 0px;
     position: absolute;
-    top: 93%;
+    top: 115%;
 }
 
 .button {
@@ -73,11 +176,11 @@ a {
 .button1 {
   background-color: white; 
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 2px solid red;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
+  background-color: red;
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -94,6 +197,18 @@ a {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(91, 211, 91);
+}
+
+.button3:hover {
+  background-color: rgb(91, 211, 91);
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 
 </style>
 </head>
@@ -103,11 +218,11 @@ a {
     <fieldset>
         <legend><i class="far fa-address-card"></i> <a href=""> Dados Pessoais</a></legend>
         <div class="option">
-        <p> Nome: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" nam="name" type="text" placeholder="digite..."> </p>
-        <p> Nascimento: <input type="date" placeholder="digite..."> </p>
+        <p> Nome: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" name="nome" type="text" placeholder="digite..."> </p>
+        <p> Nascimento: <input type="date" name="data" placeholder="digite..."> </p>
         <p> Sexo: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="opcao" value="op1"> Masculino <input type="radio" name="opcao" value="op2"> Feminino </p>
         <p> Formação: 
-        &nbsp;&nbsp;&nbsp;<select>
+        &nbsp;&nbsp;&nbsp;<select name="formacao">
         <option disabled selected hidden>Selecione</option>
         <option value="Ensino Médio Completo">Ensino Médio Completo</option>
         <option value="Cursando Ensino Médio">Cursando Ensino Médio</option>
@@ -115,7 +230,7 @@ a {
         <option value="Ensino Superior">Ensino Superior</option>
         </select>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profissão:
-        <select>
+        <select name="profissao">
         <option disabled selected hidden>Selecione</option>
         <option value="Pedreiro">Pedreiro</option>
         <option value="Hotelaria">Hotelaria</option>
@@ -125,17 +240,17 @@ a {
         <option value="Outro">Outro</option>
         </select>
         </p>
-        <p> CPF: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
+        <p> CPF: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" name="cpf" type="text" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" placeholder="digite..."> </p>
         </div>
-        <img class="img1" src="https://i.imgur.com/cv4t5oI.png"><br><br><br><br>
+        <img class="img1" src="https://i.imgur.com/cv4t5oI.png"><br><br><br><br><br>
     </fieldset><br>
     <fieldset>
         <legend><i class="fas fa-phone"></i> <a href=""> Contato</a></legend>
         <div class="option">
-        <p> E-mail: &nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
-        <p> Telefone: &nbsp;<input class="effect" type="text" placeholder="digite..."> </p> 
-        <p> Celular: &nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
-        <p> Skype: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> </p>
+        <p> E-mail: &nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" name="email" type="text" placeholder="digite..."> </p>
+        <p> Telefone: &nbsp;<input class="effect" name="telefone" type="text" maxlength="9" OnKeyPress="formatar('####-####', this)" placeholder="digite..."> </p> 
+        <p> Celular: &nbsp;&nbsp;&nbsp;<input class="effect" name="celular" type="text" maxlength="13" OnKeyPress="formatar('##-#####-####', this)" placeholder="digite..."> </p>
+        <p> Skype: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" name="skype" type="text" placeholder="digite..."> </p>
         </div> 
         <img class="img2" src="https://i.imgur.com/5QDLsBQ.png"><br><br><br><br>
     </fieldset>
@@ -143,17 +258,17 @@ a {
         <fieldset>
         <legend> <a href=""><i class="fas fa-home"></i> Endereço</a></legend>
         <div class="option">
-        <p> Logradouro: <input class="effect" type="text" placeholder="digite..."> </p>
+        <p> Logradouro: <input class="effect" name="logradouro" type="text" placeholder="digite..."> </p>
         <p> 
-        Número: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <input class="effect" type="text" placeholder="digite...">
+        Número: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" name="numero" type="text" placeholder="digite..."> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <input class="effect" name="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)" type="text" placeholder="digite...">
         </p> 
         <p> 
-        Bairro: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" type="text" placeholder="digite..."> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cidade: <input class="effect" type="text" placeholder="digite...">
+        Bairro: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="effect" name="bairro" type="text" placeholder="digite..."> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cidade: <input class="effect" name="cidade" type="text" placeholder="digite...">
         </p>
         <p> Estado: 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="estado">
         <option disabled selected hidden>Selecione</option>
         <option value="RJ">RJ</option>
         <option value="SP">SP</option>
@@ -161,21 +276,13 @@ a {
         <option value="CE">CE</option>
         <option value="Outro">Outro</option>
         </select>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profissão:
-        <select>
-        <option disabled selected hidden>Selecione</option>
-        <option value="Pedreiro">Pedreiro</option>
-        <option value="Hotelaria">Hotelaria</option>
-        <option value="Design">Design</option>
-        <option value="Música">Música</option>
-        <option value="Astronomia">Astronomia</option>
-        <option value="Outro">Outro</option>
-        </select>
         </p>
+        <p> Complemento: <input class="effect" name="complemento" type="text" placeholder="digite..."> </p>
         </div> 
         <img class="img3" src="https://i.imgur.com/NSbqxg6.png"><br><br><br><br><br><br><br>
     </fieldset>
-    <button class="button button1">Salvar Dados</button>
+    <button class="button button1" onclick="return validate()">Validar Dados</button>
+    <button class="button button3" onclick="arm()">Salvar Dados</button>
     <button class="button button2" onclick="reset">Limpar Dados</button>
 </form> 
 </body>
